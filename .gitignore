@@ -1,0 +1,40 @@
+# Android Studio & Gradle
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Dalvik/ART files
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+captures/
+
+# Gradle files
+.gradle/
+
+# Local configuration files
+local.properties
+
+# Android Studio project files
+.idea/
+*.iml
+*.hprof
+
+# NDK & C++
+.cxx/
+.externalNativeBuild/
+obj/
+
+# Misc
+*.log
+.DS_Store
+*.jks
+*.keystore

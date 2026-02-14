@@ -96,13 +96,6 @@ This keeps text readable while preserving visual depth.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=jenis-sanghani/gliss&type=Date)](https://star-history.com/#jenis-sanghani/gliss&Date)
 
-## Profile & Repo Views
-
-Powered by **komarev.com**  
-(Displays total page views)
-
----
-
 ## Setup
 
 ```bash

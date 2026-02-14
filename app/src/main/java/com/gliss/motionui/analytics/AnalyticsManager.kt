@@ -7,7 +7,7 @@ import android.util.Log
  * Easily swappable with Firebase, Mixpanel, or Amplitude.
  */
 object AnalyticsManager {
-    private const val TAG = "TouchraAnalytics"
+    private const val TAG = "GlissAnalytics"
 
     fun logEvent(name: String, params: Map<String, Any> = emptyMap()) {
         Log.d(TAG, "Event: $name | Params: $params")

@@ -159,7 +159,7 @@ fun ChatInput(
             TextField(
                 value = text,
                 onValueChange = onTextChange,
-                placeholder = { Text("Ask about Touchra gestures...", color = Color.Gray) },
+                placeholder = { Text("Ask about Gliss gestures...", color = Color.Gray) },
                 modifier = Modifier
                     .weight(1f)
                     .clip(RoundedCornerShape(24.dp))

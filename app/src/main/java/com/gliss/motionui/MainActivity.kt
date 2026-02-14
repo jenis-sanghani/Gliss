@@ -10,14 +10,14 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.gliss.motionui.navigation.NavGraph
 import com.gliss.motionui.ui.theme.Background
-import com.gliss.motionui.ui.theme.TouchraTheme
+import com.gliss.motionui.ui.theme.GlissTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            TouchraTheme {
+            GlissTheme {
                 val navController = rememberNavController()
                 Surface(
                     modifier = Modifier.fillMaxSize(),

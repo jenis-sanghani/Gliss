@@ -43,7 +43,7 @@ fun OnboardingScreen(navController: NavController) {
     val steps = remember {
         listOf(
             OnboardingStep(
-                "Welcome to Touchra",
+                "Welcome to Gliss",
                 "Experience fluid gestures refined for the modern interface. Elegance in every motion.",
                 Color(0xFF916BFF) // Soft Lavender
             ),

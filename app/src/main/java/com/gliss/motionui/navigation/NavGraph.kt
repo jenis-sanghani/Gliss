@@ -12,6 +12,7 @@ import androidx.navigation.compose.composable
 import com.gliss.motionui.ui.screens.AiAssistantScreen
 import com.gliss.motionui.ui.screens.CardStackScreen
 import com.gliss.motionui.ui.screens.GestureLabScreen
+import com.gliss.motionui.ui.screens.HolographicScreen
 import com.gliss.motionui.ui.screens.HomeScreen
 import com.gliss.motionui.ui.screens.InteractiveVisualScreen
 import com.gliss.motionui.ui.screens.LaunchFlowScreen
@@ -29,6 +30,7 @@ sealed class Screen(val route: String) {
     object AiAssistant : Screen("ai_assistant")
     object Premium : Screen("premium")
     object InteractiveVisual : Screen("visuals")
+    object Holographic : Screen("Holographic")
 }
 
 @Composable
@@ -87,6 +89,9 @@ fun NavGraph(navController: NavHostController) {
         }
         composable(Screen.InteractiveVisual.route) {
             InteractiveVisualScreen(navController)
+        }
+        composable(Screen.Holographic.route) {
+            HolographicScreen(navController)
         }
     }
 }

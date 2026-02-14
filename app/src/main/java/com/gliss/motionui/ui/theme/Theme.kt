@@ -21,7 +21,7 @@ private val DarkColorScheme = darkColorScheme(
 )
 
 @Composable
-fun TouchraTheme(
+fun GlissTheme(
     content: @Composable () -> Unit
 ) {
     val view = LocalView.current

@@ -1,7 +1,16 @@
 package com.gliss.motionui.ui.screens
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AutoAwesome
@@ -38,7 +47,7 @@ fun HomeScreen(navController: NavController) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Touchra",
+                    text = "Gliss",
                     color = Color.White,
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Medium,
@@ -64,39 +73,64 @@ fun HomeScreen(navController: NavController) {
         ) {
             Spacer(modifier = Modifier.height(16.dp))
 
-            Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
-                TouchCard(
-                    title = "AI Assistant",
-                    subtitle = "Get gesture tips & help",
-                    onClick = {
-                        AnalyticsManager.logGesture("tap", "AI Assistant")
-                        navController.navigate(Screen.AiAssistant.route)
-                    }
-                )
-                TouchCard(
-                    title = "Card Stack",
-                    subtitle = "Fluid swipe animations",
-                    onClick = {
-                        AnalyticsManager.logGesture("tap", "Card Stack")
-                        navController.navigate(Screen.CardStack.route)
-                    }
-                )
-                TouchCard(
-                    title = "Gesture Lab",
-                    subtitle = "Interactive touch experiments",
-                    onClick = {
-                        AnalyticsManager.logGesture("tap", "Gesture Lab")
-                        navController.navigate(Screen.GestureLab.route)
-                    }
-                )
-                TouchCard(
-                    title = "Motion UI",
-                    subtitle = "Reactive visual experience",
-                    onClick = {
-                        AnalyticsManager.logGesture("tap", "Motion UI")
-                        navController.navigate(Screen.InteractiveVisual.route)
-                    }
-                )
+            LazyColumn (
+                verticalArrangement = Arrangement.spacedBy(20.dp),
+                contentPadding = PaddingValues(vertical = 16.dp)
+            ) {
+                item {
+                    TouchCard(
+                        title = "AI Assistant",
+                        subtitle = "Get gesture tips & help",
+                        onClick = {
+                            AnalyticsManager.logGesture("tap", "AI Assistant")
+                            navController.navigate(Screen.AiAssistant.route)
+                        }
+                    )
+                }
+
+                item {
+                    TouchCard(
+                        title = "Card Stack",
+                        subtitle = "Fluid swipe animations",
+                        onClick = {
+                            AnalyticsManager.logGesture("tap", "Card Stack")
+                            navController.navigate(Screen.CardStack.route)
+                        }
+                    )
+                }
+
+                item {
+                    TouchCard(
+                        title = "Gesture Lab",
+                        subtitle = "Interactive touch experiments",
+                        onClick = {
+                            AnalyticsManager.logGesture("tap", "Gesture Lab")
+                            navController.navigate(Screen.GestureLab.route)
+                        }
+                    )
+                }
+
+                item {
+                    TouchCard(
+                        title = "Motion UI",
+                        subtitle = "Reactive visual experience",
+                        onClick = {
+                            AnalyticsManager.logGesture("tap", "Motion UI")
+                            navController.navigate(Screen.InteractiveVisual.route)
+                        }
+                    )
+                }
+
+                item {
+                    TouchCard(
+                        title = "Holographic",
+                        subtitle = "Holographic exp",
+                        onClick = {
+                            AnalyticsManager.logGesture("tap", "Holographic UI")
+                            navController.navigate(Screen.Holographic.route)
+                        }
+                    )
+                }
             }
         }
     }

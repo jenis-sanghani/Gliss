@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
 /**
- * Mock Billing Manager for Touchra Premium features.
+ * Mock Billing Manager for Gliss Premium features.
  * In a real app, this would integrate with Google Play Billing Library.
  */
 class BillingManager {

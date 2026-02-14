@@ -69,7 +69,7 @@ fun PremiumScreen(
             Spacer(modifier = Modifier.height(24.dp))
 
             Text(
-                text = "Touchra Premium",
+                text = "Gliss Premium",
                 color = Color.White,
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Medium,

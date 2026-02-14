@@ -36,7 +36,7 @@ fun LaunchFlowScreen(navController: NavController) {
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Touchra",
+                text = "Gliss",
                 color = Color.White,
                 fontSize = 32.sp,
                 fontWeight = FontWeight.Medium,
